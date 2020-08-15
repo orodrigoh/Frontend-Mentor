@@ -1,0 +1,33 @@
+// ### Primary
+
+$softBlue: hsl(231, 69%, 60%);
+$softRed: hsl(0, 94%, 66%);
+
+// ### Neutral
+
+$grayBlue: hsl(229, 8%, 60%);
+$darkBlue: hsl(229, 31%, 21%);
+
+// Breakpoints
+$breakpoints-up: (
+  "md": "47rem",
+  "ld": "64rem",
+  "xd": "86rem",
+);
+
+$breakpoints-down: (
+  "md": "46.93rem",
+  "ld": "63.93rem",
+  "xd": "85.93rem",
+);
+$s22: 1.375rem;
+$s24: 1.5rem;
+$s30: 1.875rem;
+$s38: 2.375rem;
+$s40: 2.5rem;
+$s44: 2.75rem;
+$s48: 3rem;
+$s54: 3.375rem;
+$s56: 3.5rem;
+
+$padding-sec: 4.875rem;

@@ -1,0 +1,50 @@
+.contact {
+  text-align: center;
+  padding: $padding-sec 0;
+  max-height: 22.5rem;
+  background-color: $softBlue;
+  color: white;
+  &__desc {
+    p {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      margin-bottom: 1.125rem;
+    }
+  }
+  &__form {
+    text-align: center;
+    margin: 1.875rem auto 0 auto;
+    input {
+      margin: 0 auto 1rem auto;
+      width: 100%;
+      max-width: 30rem;
+      height: 3rem;
+      border-radius: 5px;
+      padding: 1.125rem;
+      @extend .text-mobile;
+      font-family: "Rubik", sans-serif;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        border: none;
+      }
+    }
+    button {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 30rem;
+      height: 3rem;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      font-family: inherit;
+      color: white;
+      font-weight: 500;
+      background-color: $softRed;
+    }
+  }
+}

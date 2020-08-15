@@ -1,0 +1,62 @@
+.download {
+  text-align: center;
+  padding: $padding-sec 0;
+
+  &__desc {
+    h2 {
+      @extend .sub-mobile;
+    }
+    p {
+      @extend .text-mobile;
+      line-height: 1.5rem;
+      margin-top: $s24;
+      margin-bottom: $s44;
+    }
+  }
+  &__cards {
+    border-radius: 0.31255rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+    height: 23.125rem;
+    width: 17.5rem;
+    @extend .shadow-cards;
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    &-img {
+      margin-bottom: 2rem;
+      img {
+        max-width: 106px;
+        max-height: 103px;
+      }
+    }
+
+    &-desc {
+      h2 {
+        @extend .sub-mobile-cards;
+      }
+      p {
+        margin-top: 1rem;
+        padding-bottom: 1.7rem;
+        background: url(../../images/bg-dots.svg) no-repeat;
+        background-position: center bottom;
+        @extend .text-mobile;
+      }
+    }
+    &-btn {
+      margin: 1.5rem auto 0 auto;
+      max-width: 14.5rem;
+      background-color: $softBlue;
+      padding: 0.75rem 0;
+      border-radius: 5px;
+      @extend .shadow;
+      a {
+        color: white;
+        @extend .text-mobile;
+      }
+    }
+  }
+}
