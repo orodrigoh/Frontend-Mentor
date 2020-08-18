@@ -1,11 +1,36 @@
 .hero {
-  //   border: 1px solid red;
+
   padding-top: $s30;
   padding-bottom: $padding-sec;
+  @include breakpoint-up(md) {
+    padding-top: 2rem;
+  }
+  @include breakpoint-up(ld) {
+    padding-top: 3rem;
+  }
+  &__wraper {
+    @include breakpoint-up(md) {
+      display:grid;
+      grid-template-columns: minmax(200px, 482px) minmax(150px, 750px);
+      align-items: center;
+    }
+  }
+
   &__image {
     margin: 0 -2rem $s56 -2rem;
-    text-align: center;
     position: relative;
+    order: 2;
+    padding-right:1rem;
+  
+    @include breakpoint-up(md) {
+      margin: 0 -4rem 0 1rem; 
+      
+      }
+    
+    @include breakpoint-up(xd) {
+      margin: 0 -10.25rem 0 5rem;
+      
+    }
 
     img {
       min-width: 353px;
@@ -15,19 +40,22 @@
     &::before {
       content: "";
       position: absolute;
-      width: 85%;
+      width: 75%;
       background-color: $softBlue;
       min-height: 75%;
       right: 0;
-      top: 25%;
+      top: 30%;
       z-index: -2;
-      border-radius: 400px 0 0 400px;
+      border-radius: 45% 0 0 45%;
     }
   }
   &__content {
     text-align: center;
-    // padding: 0 0.8rem;
-  }
+
+    @include breakpoint-up(md) {
+      text-align: left;
+      }
+    }
   &__title {
     h1 {
       font-size: 1.75rem;
@@ -35,11 +63,17 @@
       font-weight: 500;
       margin-bottom: $s22;
       line-height: 2rem;
+      @include breakpoint-up(ld) {
+        font-size: $s48;
+        line-height: 3.25rem;
+        margin-bottom: $s32;
+      }
     }
   }
   &__copy {
     p {
       @extend .text-mobile;
+      @extend .text-desk;
       color: $grayBlue;
       line-height: 1.5rem;
     }
@@ -47,24 +81,39 @@
   &__btn {
     display: flex;
     justify-content: center;
-    margin-top: 2.25rem;
+    margin-top: 3rem;
+    @include breakpoint-up(md) {
+      justify-content: left;
+      }
 
     .btn {
-      min-width: 150px;
+      min-width: 162px;
+      height: 3rem;
       display: block;
-      border-radius: 4px;
+      border-radius: 5px;
       background-color: $softBlue;
       color: white;
       text-align: center;
-      padding: 1rem 0;
+      padding: 0.9rem 0;
+      
       @extend .text-mobile;
       @extend .shadow;
       font-weight: 500;
+      &:hover {
+        border: 2px solid $softBlue;
+        color: $softBlue;
+        background-color: white;
+        
+      }
       &:last-child {
         margin-left: 0.875rem;
         background-color: #f7f7f7;
         color: $darkBlue;
-      }
-    }
+        
+        &:hover {
+          border: 2px solid $darkBlue;
+        }
+     }
+   }
   }
 }

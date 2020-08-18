@@ -8,6 +8,7 @@
     }
     p {
       @extend .text-mobile;
+      @extend .text-desk;
       line-height: 1.5rem;
       margin-top: $s24;
       margin-bottom: $s44;

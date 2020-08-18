@@ -8,6 +8,7 @@
     }
     p {
       @extend .text-mobile;
+      @extend .text-desk;
       line-height: 1.5rem;
       margin-top: $s24;
       margin-bottom: $s44;
@@ -20,6 +21,7 @@
     &-item {
       border-bottom: 1px solid rgba($color: #9194a1, $alpha: 0.5);
       dt {
+        
         font-size: 0.875rem;
         color: $darkBlue;
         font-weight: 500;
@@ -27,6 +29,10 @@
         position: relative;
         padding-top: 1.375rem;
         cursor: pointer;
+        @include breakpoint-up(ld) {
+          font-size: $s18;
+      
+      }
 
         &::after {
           content: "";
@@ -40,6 +46,7 @@
       }
       dd {
         @extend .text-mobile;
+        @extend .text-desk;
         line-height: 1.5rem;
         margin-top: $s24;
         text-align: left;

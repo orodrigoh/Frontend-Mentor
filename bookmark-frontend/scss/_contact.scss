@@ -5,6 +5,16 @@
   background-color: $softBlue;
   color: white;
   &__desc {
+    h1 {
+      font-size:$s24;
+      font-weight: 500;
+      @include breakpoint-up(ld) {
+        
+        font-size: $s32;
+      
+    }
+  }  
+   
     p {
       font-size: 0.75rem;
       text-transform: uppercase;

@@ -39,6 +39,15 @@ a {
   margin-left: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+  @include breakpoint-up(md) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    }
+  
+  @include breakpoint-up(xd) {
+  padding-right: 10.25rem;
+  padding-left: 10.25rem;
+  }
 }
 
 .text-mobile {
@@ -46,6 +55,17 @@ a {
   font-weight: 400;
   color: $grayBlue;
   letter-spacing: 0.5px;
+  
+  
+}
+.text-desk {
+  @include breakpoint-up(ld) {
+    
+    font-size: $s18;
+    font-weight: 400;
+    color: $grayBlue;
+    letter-spacing: 0.5px;
+    }
 }
 
 .shadow {
@@ -58,7 +78,11 @@ a {
   font-weight: 500;
   font-size: 1.3755rem;
   color: $darkBlue;
+  @include breakpoint-up(ld) {
+    font-size: $s30;
+  }
 }
+
 
 .sub-mobile-cards {
   font-weight: 500;
