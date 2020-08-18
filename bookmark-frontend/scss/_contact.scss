@@ -4,12 +4,19 @@
   max-height: 22.5rem;
   background-color: $softBlue;
   color: white;
+
+  &__wraper {
+    @include breakpoint-up(md){
+      max-width: 28rem;
+      margin: 0 auto;
+    }
+    
+  }
   &__desc {
     h1 {
       font-size:$s24;
       font-weight: 500;
       @include breakpoint-up(ld) {
-        
         font-size: $s32;
       
     }
@@ -25,6 +32,9 @@
   &__form {
     text-align: center;
     margin: 1.875rem auto 0 auto;
+    @include breakpoint-up(md){
+      display: flex;
+    }
     input {
       margin: 0 auto 1rem auto;
       width: 100%;
@@ -35,6 +45,9 @@
       @extend .text-mobile;
       font-family: "Rubik", sans-serif;
       border: none;
+      @include breakpoint-up(md){
+        max-width: 18.5rem;
+      }
 
       &:focus {
         outline: none;
@@ -55,6 +68,18 @@
       color: white;
       font-weight: 500;
       background-color: $softRed;
+      cursor: pointer;
+      @include breakpoint-up(md){
+        max-width: 7.8rem;
+        margin-left: 0.75rem;
+        &:hover {
+          background-color: white;
+          color: $softRed;
+          border: 2px solid $softRed;
+        }
+      }
+
+      
     }
   }
 }

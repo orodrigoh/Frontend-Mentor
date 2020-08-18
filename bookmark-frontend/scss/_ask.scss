@@ -1,8 +1,21 @@
 .ask {
   text-align: center;
   padding: $padding-sec 0;
-
+  @include breakpoint-up(md) {
+    padding-bottom: 9rem;
+  }
+  
+&__wraper{
+  @include breakpoint-up(md) {
+    max-width:36rem;
+    margin: 0 auto;
+    
+  }
+}
   &__desc {
+    @include breakpoint-up(md) {
+      border-bottom: 1px solid rgba($color: #9194a1, $alpha: 0.5);
+    }
     h2 {
       @extend .sub-mobile;
     }
@@ -12,6 +25,7 @@
       line-height: 1.5rem;
       margin-top: $s24;
       margin-bottom: $s44;
+      
     }
   }
   &__accordion {

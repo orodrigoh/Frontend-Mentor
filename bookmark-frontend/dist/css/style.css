@@ -530,6 +530,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 64rem) {
+  .features__desc {
+    margin-left: 2rem;
+  }
+}
+
 .features__desc p {
   line-height: 1.5rem;
   margin-top: 1.5rem;
@@ -586,9 +592,8 @@ footer {
 @media screen and (min-width: 47rem) {
   .features__content.active {
     display: grid;
-    grid-template-columns: minmax(150px, 720px) minmax(200px, 482px);
+    grid-template-columns: minmax(150px, 620px) minmax(200px, 482px);
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -608,6 +613,20 @@ footer {
 .download {
   text-align: center;
   padding: 4.875rem 0;
+}
+
+@media screen and (min-width: 47rem) {
+  .download {
+    padding-top: 9.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 47rem) {
+  .download__desc {
+    max-width: 36rem;
+    margin: 0 auto;
+  }
 }
 
 .download__desc p {
@@ -658,9 +677,62 @@ footer {
   color: white;
 }
 
+.download__cards-btn:hover {
+  background-color: white;
+  border: 2px solid #5368df;
+}
+
+.download__cards-btn:hover a {
+  color: #5368df;
+}
+
+@media screen and (min-width: 64rem) {
+  .download__wraper {
+    display: grid;
+    grid-template-rows: repeat(12, 2.5rem);
+    grid-template-columns: repeat(3, 17.5rem);
+    column-gap: 2rem;
+    justify-content: center;
+  }
+  .download__cards:first-child {
+    grid-row: 1/9;
+    grid-column: 1/2;
+  }
+  .download__cards:nth-child(2) {
+    grid-row: 2/10;
+    grid-column: 2/3;
+  }
+  .download__cards:last-child {
+    grid-row: 3/11;
+    grid-column: 3/4;
+  }
+  .download__cards:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
 .ask {
   text-align: center;
   padding: 4.875rem 0;
+}
+
+@media screen and (min-width: 47rem) {
+  .ask {
+    padding-bottom: 9rem;
+  }
+}
+
+@media screen and (min-width: 47rem) {
+  .ask__wraper {
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 47rem) {
+  .ask__desc {
+    border-bottom: 1px solid rgba(145, 148, 161, 0.5);
+  }
 }
 
 .ask__desc p {
@@ -749,6 +821,13 @@ footer {
   color: white;
 }
 
+@media screen and (min-width: 47rem) {
+  .contact__wraper {
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+}
+
 .contact__desc h1 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -772,6 +851,12 @@ footer {
   margin: 1.875rem auto 0 auto;
 }
 
+@media screen and (min-width: 47rem) {
+  .contact__form {
+    display: flex;
+  }
+}
+
 .contact__form input {
   margin: 0 auto 1rem auto;
   width: 100%;
@@ -781,6 +866,12 @@ footer {
   padding: 1.125rem;
   font-family: "Rubik", sans-serif;
   border: none;
+}
+
+@media screen and (min-width: 47rem) {
+  .contact__form input {
+    max-width: 18.5rem;
+  }
 }
 
 .contact__form input:focus {
@@ -803,6 +894,19 @@ footer {
   color: white;
   font-weight: 500;
   background-color: #fa5757;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 47rem) {
+  .contact__form button {
+    max-width: 7.8rem;
+    margin-left: 0.75rem;
+  }
+  .contact__form button:hover {
+    background-color: white;
+    color: #fa5757;
+    border: 2px solid #fa5757;
+  }
 }
 
 .footer {
@@ -811,10 +915,32 @@ footer {
   padding: 2.5rem 0 2.75rem 0;
 }
 
+@media screen and (min-width: 47rem) {
+  .footer {
+    height: 5.625rem;
+    padding: 0;
+  }
+}
+
 .footer__content {
   margin: 0 auto;
   text-align: center;
   height: 252px;
+}
+
+@media screen and (min-width: 47rem) {
+  .footer__content {
+    display: flex;
+    height: 5.625rem;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 47rem) {
+  .footer__links {
+    display: flex;
+  }
 }
 
 .footer__links a {
@@ -825,14 +951,39 @@ footer {
   line-height: 1;
 }
 
+@media screen and (min-width: 47rem) {
+  .footer__links a {
+    margin: 0;
+  }
+  .footer__links a:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .footer__links a:hover {
+    color: #fa5757;
+  }
+}
+
 .footer__logo {
   margin-bottom: 1.375rem;
+}
+
+@media screen and (min-width: 47rem) {
+  .footer__logo {
+    margin: 0 4rem 0 0;
+  }
 }
 
 .footer__social {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 47rem) {
+  .footer__social {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 .footer__social a {

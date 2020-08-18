@@ -2,12 +2,29 @@
   background-color: $darkBlue;
   height: 20.875rem;
   padding: 2.5rem 0 2.75rem 0;
+
+  @include breakpoint-up(md) {
+    height: 5.625rem;
+    padding: 0;
+  }
   &__content {
     margin: 0 auto;
     text-align: center;
     height: 252px;
+    @include breakpoint-up(md) {
+      display: flex;
+      height: 5.625rem;
+      align-items: center;
+   
+      flex-direction: row;
+      
+    }
   }
   &__links {
+    @include breakpoint-up(md) {
+      display: flex;
+   
+    }
     a {
       @extend .text-mobile;
       text-transform: uppercase;
@@ -15,16 +32,33 @@
       margin-top: 2.375rem;
       font-size: 0.75rem;
       line-height: 1;
+      @include breakpoint-up(md) {
+        margin:  0;
+        &:not(:last-child){
+          margin-right: 3rem;
+        }
+        &:hover {
+          color: $softRed;
+        }
+      }
     }
   }
   &__logo {
     margin-bottom: 1.375rem;
+    @include breakpoint-up(md) {
+      margin: 0 4rem 0 0;
+     
+      
+    }
   }
   &__social {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-
+    @include breakpoint-up(md) {
+      margin: 0;
+      margin-left: auto;
+    }
     a {
       width: 1.5rem;
       height: 1.5rem;

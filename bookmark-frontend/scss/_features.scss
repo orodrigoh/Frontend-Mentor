@@ -73,13 +73,16 @@
   }
 
   &__desc {
+   
     margin-top: 5.3125rem;
-    
     @include breakpoint-up(md) {
       max-width: 27.5rem;
       text-align: left;
       margin-left: 2.625rem;;
       margin-top:1rem;
+    }
+    @include breakpoint-up(ld) {
+      margin-left: 2rem;
     }
     h2 {
       @extend .sub-mobile;
@@ -111,6 +114,7 @@
         top: 25%;
         z-index: -2;
         border-radius: 0 600px 600px 0;
+        
         @include breakpoint-up(md) {
           left: -4rem;
           width: 80%;
@@ -135,9 +139,10 @@
       animation: tab 0.5s forwards;
       @include breakpoint-up(md) {
         display:grid;
-        grid-template-columns: minmax(150px, 720px) minmax(200px, 482px) ;
+        grid-template-columns: minmax(150px, 620px) minmax(200px, 482px) ;
         align-items: center;
-        justify-content: space-between;
+        
+        
       }
     }
   }

@@ -1,8 +1,16 @@
 .download {
   text-align: center;
   padding: $padding-sec 0;
+  @include breakpoint-up(md) {
+    padding-top: 9.5rem;
+    padding-bottom: 2rem;
+  }
 
   &__desc {
+    @include breakpoint-up(md) {
+      max-width:36rem;
+      margin: 0 auto;
+    }
     h2 {
       @extend .sub-mobile;
     }
@@ -36,6 +44,8 @@
     }
 
     &-desc {
+      
+
       h2 {
         @extend .sub-mobile-cards;
       }
@@ -58,6 +68,47 @@
         color: white;
         @extend .text-mobile;
       }
+      &:hover {
+        background-color: white;
+        border:2px solid $softBlue;
+        a {
+          color: $softBlue;
+        }
+      }
     }
   }
+
+  @include breakpoint-up(ld) {
+ 
+     &__wraper {
+      display:grid;
+      grid-template-rows: repeat(12, 2.5rem);
+      grid-template-columns: repeat(3, 17.5rem);
+      column-gap: 2rem;
+      justify-content: center;
+    
+      
+    }        
+    &__cards {
+      
+        &:first-child{
+          grid-row: 1/9;
+          grid-column: 1/2;
+          
+        }
+        &:nth-child(2) {
+          grid-row: 2/10;
+          grid-column: 2/3;
+          
+        }
+        &:last-child {
+          grid-row:3/11;
+          grid-column: 3/4;
+        } 
+        &:not(:last-child){
+          margin-right: 2rem;
+        }
+      }  
+    }
+  
 }
