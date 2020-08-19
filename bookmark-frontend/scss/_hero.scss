@@ -8,7 +8,7 @@
   @include breakpoint-up(ld) {
     padding-top: 3rem;
   }
-  &__wraper {
+  &__grid {
     @include breakpoint-up(md) {
       display:grid;
       grid-template-columns: minmax(200px, 482px) minmax(150px, 750px);

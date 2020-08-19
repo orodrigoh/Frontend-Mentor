@@ -5,7 +5,7 @@
   background-color: $softBlue;
   color: white;
 
-  &__wraper {
+  &__grid {
     @include breakpoint-up(md){
       max-width: 28rem;
       margin: 0 auto;

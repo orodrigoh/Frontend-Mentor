@@ -321,7 +321,7 @@ footer {
 }
 
 @media screen and (min-width: 47rem) {
-  .hero__wraper {
+  .hero__grid {
     display: grid;
     grid-template-columns: minmax(200px, 482px) minmax(150px, 750px);
     align-items: center;
@@ -687,7 +687,7 @@ footer {
 }
 
 @media screen and (min-width: 64rem) {
-  .download__wraper {
+  .download__grid {
     display: grid;
     grid-template-rows: repeat(12, 2.5rem);
     grid-template-columns: repeat(3, 17.5rem);
@@ -723,7 +723,7 @@ footer {
 }
 
 @media screen and (min-width: 47rem) {
-  .ask__wraper {
+  .ask__grid {
     max-width: 36rem;
     margin: 0 auto;
   }
@@ -822,7 +822,7 @@ footer {
 }
 
 @media screen and (min-width: 47rem) {
-  .contact__wraper {
+  .contact__grid {
     max-width: 28rem;
     margin: 0 auto;
   }
