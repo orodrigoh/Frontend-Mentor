@@ -1,0 +1,42 @@
+.articles {
+background: $veryLight;
+text-align:center;
+padding-top: 5.875rem;
+  h2 {
+    @extend .h2-title;
+  }
+  &__cards {
+    
+    &-item {
+      margin-top: 1.5rem;
+      background: $white;
+      padding-bottom:1.125rem;
+      border-radius: 5px 5px 0 0;
+      img {
+        max-width: 100%;
+        border-radius: 5px 5px 0 0;
+      }
+      .desc {
+        padding: 1.5rem;
+        text-align: left;
+      }
+      small {
+        font-size: 0.625rem;
+        color: $grayishBlue;
+        margin-top: 6px;
+      }
+      h4 {
+        font-size: 1rem;
+        color: #000;
+        font-weight: 400;
+        line-height: 1.25rem;
+        margin: 12px 0;
+      }
+      p {
+        font-size: 0.75rem;
+        color: $grayishBlue;
+        line-height: 1.125rem;
+      }
+    }
+  }
+}

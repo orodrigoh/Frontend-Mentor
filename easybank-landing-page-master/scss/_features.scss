@@ -1,0 +1,36 @@
+.features {
+  background:$lightGrayish;
+  padding-bottom:3.25rem;
+  padding-top:4.375rem ;
+  &__copy {
+    text-align: center;
+    padding:0 0.75rem 2.5rem 0.75rem ;
+    h2 {
+      @extend .h2-title;
+    }
+    p {
+      @extend .p-sub;
+      margin-top:1.5rem;
+    }
+  }
+  &__cards {
+    
+    text-align: center;
+    .cards-item {
+      padding: 1rem 0;
+      
+        img {
+          margin: 0 auto;
+        }
+        h3 {
+          @extend .h3-title;
+          padding: 1rem 0;
+        }
+        p {
+          @extend .p-sub;
+        }
+      
+    }
+  }
+
+}

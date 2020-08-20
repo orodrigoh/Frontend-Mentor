@@ -1,0 +1,51 @@
+// Hero Section
+
+.hero {
+  position: relative;
+  min-height: 282px;  
+ 
+    &__img {
+    min-height: 282px;
+    margin-right:-$padding;
+    margin-left:-$padding;
+    background: url(../../images/bg-intro-mobile.svg) no-repeat;
+    background-size: cover;
+    background-position: top 40% center;
+      &:after {
+      content: '';
+      margin: 0 auto;
+      display: block;
+      background: url(../../images/image-mockups.png) no-repeat;
+      background-size: 106%;
+      background-position: bottom 12% center;
+      min-height: 282px;  
+      max-width: 20.4375rem;
+      }
+        
+    }
+    &__copy {
+      padding-top:3rem;
+      padding-bottom: 5.375rem;
+      text-align: center;
+       h1 {
+       @extend .h1-title;
+       }
+       p {
+         @extend .p-sub;
+         margin-top: 1.5rem;
+         margin-bottom: 2.25rem;
+       }
+    }
+}
+
+.btn {
+  width: 10.25rem;
+  background: linear-gradient( to right, $limeGreen, $brightCyan);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  color: $white;
+  font-weight: 500;
+  font-size: 0.875rem ;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,28 @@
+// ### Primary
+
+$darkBlue: hsl(233, 26%, 24%);
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan: hsl(192, 70%, 51%);
+
+// ### Neutral
+
+$grayishBlue: hsl(233, 8%, 62%);
+$lightGrayish: hsl(220, 16%, 96%);
+$veryLight: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+
+// Breakpoints
+$breakpoints-up: (
+  "md": "47rem",
+  "ld": "64rem",
+  "xd": "86rem",
+);
+
+$breakpoints-down: (
+  "md": "46.93rem",
+  "ld": "63.93rem",
+  "xd": "85.93rem",
+);
+
+$padding: 1.5rem;
