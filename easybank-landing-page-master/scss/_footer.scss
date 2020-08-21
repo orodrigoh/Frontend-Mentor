@@ -1,0 +1,38 @@
+.footer {
+background: $darkBlue;
+text-align: center;
+padding: 2.375rem 0;
+max-height: 510px;
+  &__itens1 {
+    
+    .social {
+      display: flex;
+      justify-content: center;
+      padding: 1.875rem 0;
+      a {
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  &__itens2 {
+   
+   a {
+     display: block;
+     padding: 0.5rem 0;
+     font-size: 0.875rem;
+     color:$lightGrayish;
+     line-height: 1.3rem;
+   }
+  }
+  &__itens3 {
+    .footer__btn {
+      padding: 1.25rem 0;
+    }
+    p {
+      @extend .p-sub;
+      padding: 0.5rem 0;
+    }
+  }
+}

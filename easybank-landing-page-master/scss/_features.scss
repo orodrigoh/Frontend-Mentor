@@ -21,13 +21,18 @@
       
         img {
           margin: 0 auto;
+          
         }
         h3 {
           @extend .h3-title;
-          padding: 1rem 0;
+          line-height: 1.3rem;
+          padding: 1.625rem 0;
         }
         p {
           @extend .p-sub;
+          @include breakpoint-up(md) {
+            font-size: 1rem;
+          }
         }
       
     }
