@@ -326,6 +326,10 @@ nav {
   margin: 0 auto;
 }
 
+.btn:hover {
+  opacity: 0.5;
+}
+
 @media screen and (min-width: 69.375rem) {
   .hero__img {
     background: url(../../images/bg-intro-desktop.svg) no-repeat right -300px top 50%;
