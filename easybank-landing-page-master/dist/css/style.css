@@ -427,6 +427,24 @@ nav {
   }
 }
 
+@media screen and (min-width: 47rem) {
+  .features {
+    padding-top: 6.875rem;
+    padding-bottom: 5.75rem;
+  }
+  .features__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 16.25rem);
+    text-align: center;
+    grid-gap: 1.75rem;
+    justify-content: center;
+  }
+  .features__cards .cards-item {
+    max-width: 16.25rem;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 69.375rem) {
   .features {
     padding-top: 6.875rem;
@@ -500,6 +518,16 @@ nav {
   font-size: 0.75rem;
   color: #9698a6;
   line-height: 1.125rem;
+}
+
+@media screen and (min-width: 47rem) {
+  .articles__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 20.5rem);
+    text-align: left;
+    grid-gap: 1.75rem;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 69.375rem) {

@@ -37,7 +37,23 @@
     }
   }
 }
-
+@include breakpoint-up(md) {
+  .features { 
+    padding-top:6.875rem ;
+    padding-bottom: 5.75rem;
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 16.25rem);
+      text-align: center;
+      grid-gap: 1.75rem;
+      justify-content: center;
+    .cards-item {
+      max-width: 16.25rem;
+      margin: 0 auto;
+      }
+   }
+ }
+}
 @include breakpoint-up(ld){
   .features {
     padding-top:6.875rem ;

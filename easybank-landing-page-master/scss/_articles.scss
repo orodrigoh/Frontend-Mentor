@@ -47,6 +47,17 @@ padding-bottom: 5.5rem;
     }
   }
 }
+@include breakpoint-up(md) {
+  .articles {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 20.5rem);
+    text-align: left;
+    grid-gap: 1.75rem;
+    justify-content: center;
+  }
+ }
+}
 
 @include breakpoint-up(ld) {
   .articles {
