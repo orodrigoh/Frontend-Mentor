@@ -2,7 +2,7 @@
 background: $veryLight;
 text-align:center;
 padding-top: 5.875rem;
-padding-bottom: 5.5rem;;
+padding-bottom: 5.5rem;
   h2 {
     @extend .h2-title;
   }
@@ -45,5 +45,22 @@ padding-bottom: 5.5rem;;
         line-height: 1.125rem;
       }
     }
+  }
+}
+
+@include breakpoint-up(ld) {
+  .articles {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: left;
+      grid-gap: 1.75rem;
+    }
+
+
+
   }
 }

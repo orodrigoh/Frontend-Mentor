@@ -36,3 +36,29 @@ max-height: 510px;
     }
   }
 }
+
+@include breakpoint-up(ld) {
+  .footer {
+    text-align: left;
+    padding: 2.375rem 0;
+    max-height: 11.875rem;
+
+    &__btn {
+        .btn {
+        margin-right:0 ;
+      }
+    }
+    &__itens2 {
+     .links1 {
+       margin-right: 120px;
+     }  
+    }
+  }
+
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

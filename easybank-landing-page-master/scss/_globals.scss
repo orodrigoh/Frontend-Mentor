@@ -4,24 +4,35 @@
 
 body {
     font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
 }
 img {
     display: block;
 }
 .container {
-    max-width: 100%;
+    width: 100%;
+    max-width:1110px;
     margin-right: auto;
     margin-left: auto;
     padding-right: $padding;
     padding-left: $padding;
-}
+    @include breakpoint-up(ld) {
+        max-width: 1110px;
+        
+    }
+    @include breakpoint-up(xd) {
+        padding-right: 0;
+        padding-left: 0;
+        
+    }
+ }
 
 .h1-title {
     font-size: 2.5rem;
     color: $darkBlue;
     font-weight: 300;
     line-height: 2.8rem;
-    @include breakpoint-up(md) {
+    @include breakpoint-up(ld) {
         font-size: 3.125rem;   
         line-height: 4rem;
     }
@@ -31,7 +42,7 @@ img {
     color: $darkBlue;
     font-weight: 300;
     line-height: 2.25rem;
-    @include breakpoint-up(md) {
+    @include breakpoint-up(ld) {
         font-size: 2.25rem;   
         line-height: 2.25rem;
         }  
@@ -40,7 +51,7 @@ img {
     font-size: 1.25rem;
     color: $darkBlue;
     font-weight: 400;
-    @include breakpoint-up(md) {
+    @include breakpoint-up(ld) {
         font-size: 1.375rem; 
         }
     
@@ -51,7 +62,7 @@ img {
  font-size: 0.875rem;
  color: $grayishBlue;
  line-height: 1.5rem;
- @include breakpoint-up(md) {
+ @include breakpoint-up(ld) {
     font-size: 1.125rem;   
     line-height: 1.75rem;
     }
@@ -59,12 +70,12 @@ img {
 
 .hide-for-mobile {
  @include breakpoint-down(md) {
-     display:none; 
+     display:none !important; 
  }
 }
 
 .hide-for-desktop {
     @include breakpoint-up(md) {
-        display:none; 
+        display:none !important; 
     }
    }

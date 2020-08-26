@@ -11,52 +11,57 @@
  
 </head>
 <body>
-<header>
-  <div class="overlay ">
-  </div>
-  <div class="container">
-    <nav class="nav">
+  <header class="header">
+    <div class="overlay"></div>
 
-      <div class="nav__logo"><img src="./images/logo.svg" alt="logo">
-      </div>
+    <nav class="container header__grid">
+        <a href="#" class="header__logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
 
-     
-      <div class="nav__menu">
-        <div class="nav__menu-mobile js-hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+      
+        <div class="header__links hide-for-mobile">
+          <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
         </div>
+        <div class="btn-header">
+          <a href="#" class="btn hide-for-mobile">Request Invite</a>
 
-        <div class="nav__menu-mobile-links js-links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
-        </div>  
+        </div>
+        <a href="#" class="header__hamburger hide-for-desktop">
+          
+        </a>
 
-        
-
-        <div class="nav__menu-desktop"></div>
-
-      </div>
+      
     </nav>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <div class="hero__grid">
-        <div class="hero__img"></div>
-        <div class="hero__copy">
-          <h1>Next generation digital banking</h1>
-          <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
-            for spending, saving, budgeting, investing, and much more.</p>
-            <a class="btn" href="#">Request Invite</a>
-        </div>
-      </div>
+
+    <div class="header__menu">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <a href="">Blog</a>
+      <a href="">Careers</a>
     </div>
-  </div>
-</section>
+  </header>
+
+  <section class="hero">
+    <div class="hero__grid">
+        <div class="hero__img">
+          <img src="./images/image-mockups.png" alt="mockup">
+        </div>
+        
+        <div class="hero__copy container">
+          <h1>
+            Next generation digital banking
+          </h1>
+          <p>
+            Take your financial life online. Your Easybank account will be a one-stop-shop 
+      for spending, saving, budgeting, investing, and much more.
+          </p>
+          <a href="#" class="btn">Request Invite</a>
+        </div>
+    </div>
+  </section>
+
 <section class="features">
   <div class="container">
     <div class="features__copy">
@@ -137,7 +142,7 @@
    </div>
  </section>
  <section class="footer">
-   <div class="container">
+   <div class="container flex">
 
      <div class="footer__itens1">
        <div class="logo">
@@ -151,13 +156,17 @@
          <a href="#"><img src="./images/icon-instagram.svg" alt="instagram"></a></a>
        </div>
      </div>
-     <div class="footer__itens2">
+     <div class="footer__itens2 flex">
+       <div class="links1">
      <a href="#">About Us</a>
      <a href="#">Contact</a>
      <a href="#">Blog</a>
+    </div>
+    <div class="links2">
      <a href="#">Careers</a>
      <a href="#">Support</a>
      <a href="#">Privacy Policy</a>
+    </div>
     </div>
      <div class="footer__itens3">
       <div class="footer__btn"><a class="btn" href="#">Request Invite</a></div>
@@ -169,3 +178,7 @@
 </body>
 </html>
 
+<!-- <h1>Next generation digital banking</h1>
+<p>Take your financial life online. Your Easybank account will be a one-stop-shop 
+  for spending, saving, budgeting, investing, and much more.</p>
+  <a class="btn" href="#">Request Invite</a> -->

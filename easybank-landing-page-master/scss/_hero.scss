@@ -1,36 +1,32 @@
 // Hero Section
 
 .hero {
-  position: relative;
-  min-height: 282px;  
-  
+  background: $veryLight;
     &__img {
-    min-height: 282px;
-    margin-right:-$padding;
-    margin-left:-$padding;
-    background: url(../../images/bg-intro-mobile.svg) no-repeat;
-    background-size: cover;
-    background-position: top 40% center;
-    
-    
-  
-      &:after {
-      content: '';
-      margin: 0 auto;
-      display: block;
-      background: url(../../images/image-mockups.png) no-repeat;
-      background-size: 106%;
-      background-position: bottom 12% center;
-      min-height: 282px;  
-      max-width: 20.4375rem;
+      
+      background: url(../../images/bg-intro-mobile.svg) no-repeat center top 50%;
+      background-size: cover;
+      position: relative;
+      top:0;
+      z-index: 0;
+      height: 281px;
+      img {
+        width:100%;
+        max-width:345px;
+        margin: 0 auto;
+        top:-125px;
+        position: relative;
+        z-index: -1;
       }
-        
+
     }
+   
+
     &__copy {
       padding-top:2.625rem;
       padding-bottom: 5.375rem;
       text-align: center;
-      grid-column:1/3 ;
+
        h1 {
        @extend .h1-title;
        }
@@ -39,6 +35,7 @@
          margin-top: 1.2rem;
          margin-bottom: 2.25rem;
        }
+     
     }
 }
 
@@ -52,4 +49,79 @@
   font-size: 0.875rem ;
   display: block;
   margin: 0 auto;
+ 
+}
+
+@include breakpoint-up(ld) {
+  .hero {
+
+    &__img {
+      background: url(../../images/bg-intro-desktop.svg) no-repeat right -300px top 50%;
+      background-size: 150%;
+      position: relative;
+      z-index: 0;
+      height: 380px;
+
+      img {
+        width:100%;
+        max-width:445px;
+        margin: 0 auto;
+        top:-80px;
+        right: -150px;
+        position: relative;
+        z-index: -1;
+      }
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 645px;
+      grid-template-areas: 'copy img';
+      grid-template-rows: 380px;
+      justify-content: space-between;    
+      align-items: center;
+      position: relative;
+    }
+    &__copy {
+      grid-area: copy;
+      text-align: left;
+      max-width: 445px;  
+      margin: 0 auto;
+      padding: 0;
+      padding-left: $padding;
+      
+    }
+    .btn {
+      margin-left: 0;
+    }
+  }
+}
+
+@include breakpoint-up(xd) {
+  .hero {
+  &__img {
+    background-position: right -385px top 76%;
+    background-size: 160%;
+    height: 100%;
+
+    img {
+    width: 100%;
+    max-width: 750px;
+    top: -109px;
+    right: -128px;
+    }
+  }
+  &__grid {
+    grid-template-columns: 1fr 750px;
+    grid-template-rows: 656px;
+    
+  
+
+  }
+  &__copy {
+    max-width: 445px;  
+    margin: 0 auto;
+    padding-left: 0.875rem;
+    margin-right: 6rem;
+   }
+ }
 }
