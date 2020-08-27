@@ -580,6 +580,15 @@ nav {
   padding: 0.5rem 0;
 }
 
+@media screen and (min-width: 47rem) {
+  .footer__itens1 .social a:hover svg path {
+    fill: #31d35c;
+  }
+  .footer__itens2 .links1 a:hover, .footer__itens2 .links2 a:hover {
+    color: #31d35c;
+  }
+}
+
 @media screen and (min-width: 69.375rem) {
   .footer {
     text-align: left;

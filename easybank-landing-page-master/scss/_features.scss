@@ -54,7 +54,7 @@
    }
  }
 }
-@include breakpoint-up(ld){
+@include breakpoint-up(ld) {
   .features {
     padding-top:6.875rem ;
     padding-bottom: 5.75rem;

@@ -36,7 +36,29 @@ max-height: 510px;
     }
   }
 }
-
+@include breakpoint-up(md) {
+  .footer {
+    &__itens1 {
+      .social {
+        a:hover {
+         svg {
+           path {
+             fill: $limeGreen;
+           }
+         }
+        }
+      }
+    }
+  
+  &__itens2 {
+   .links1, .links2{
+    a:hover {
+      color: $limeGreen;
+    }
+   } 
+  }
+}
+}
 @include breakpoint-up(ld) {
   .footer {
     text-align: left;
