@@ -89,7 +89,7 @@
       max-width: 445px;  
       margin: 0 auto;
       padding: 0;
-      padding-left: $padding;
+      padding-left: 1rem;
       
     }
     .btn {
@@ -122,8 +122,9 @@
   &__copy {
     max-width: 445px;  
     margin: 0 auto;
-    padding-left: 0.875rem;
+    padding-left: 2.5rem;
     margin-right: 6rem;
+    margin: 0 auto;
    }
  }
 }
