@@ -52,7 +52,7 @@ a {
 }
 
 .content {
-  background: url(./assets/img/lousa.svg);
+  background: url('./assets/img/lousa.svg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -97,7 +97,7 @@ a {
 }
 
 .delete {
-  background: url(./assets/img/delete.svg);
+  background: url('./assets/img/delete.svg');
   width: 30px;
   height: 35px;
   background-size: 90%;
