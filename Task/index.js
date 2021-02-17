@@ -59,7 +59,7 @@ const deleta = document.querySelectorAll('.delete');
 function dragItem() {
 
     const stickers = document.querySelectorAll('.stick')
-
+    
     stickers.forEach((target) => {
 
      function arrastar(e) {
@@ -83,6 +83,7 @@ function dragItem() {
     }
     
     target.addEventListener('mousedown', mousePress)
+     console.log(target);
     });
 
 }
