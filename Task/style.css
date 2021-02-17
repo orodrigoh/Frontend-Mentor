@@ -52,7 +52,7 @@ a {
 }
 
 .content {
-  background: url('./assets/img/lousa.svg');
+  background: url('/assets/img/lousa.svg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
